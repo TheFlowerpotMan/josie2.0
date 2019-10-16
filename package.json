@@ -1,0 +1,27 @@
+{
+  "name": "josieordwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFlowerpotMan/Josie-Website.git"
+  },
+  "author": "Ben Ord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheFlowerpotMan/Josie-Website/issues"
+  },
+  "homepage": "https://github.com/TheFlowerpotMan/Josie-Website#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "command-line-args": "^5.0.1",
+    "glob": "^7.1.2",
+    "livereload": "^0.6.3",
+    "node-watch": "^0.5.5"
+  }
+}
