@@ -44,7 +44,7 @@ function build() {
     }
     console.log('Copying static files');
     copyStaticFiles('src/images/**/*', 'docs/images');
-    copyStaticFiles('src/projects/**/*', 'docs/projects');
+    copyStaticFiles('src/projects/*', 'docs/projects');
     copyStaticFiles('src/styles/**/*', 'docs/styles');
     copyStaticFiles('src/js/**/*', 'docs/js');
     copyStaticFiles('src/partials/**/*', 'docs/partials');
@@ -92,7 +92,7 @@ function copyStaticFiles(sourceGlob, destinationFolderPath) {
         var name = path.basename(filePath);
         console.log(name);
         if (!name.includes('.')) {
-            try { fs.mkdir(destinationFolderPath + '/' + name); } catch (e) { }
+            try { fs.mkdirSync(destinationFolderPath + '/' + name); } catch (e) { }
             copyStaticFiles(filePath + '**/*', destinationFolderPath + '/' + name);
         } else {
             fs.copyFileSync(filePath, destinationFolderPath + '/' + name);
