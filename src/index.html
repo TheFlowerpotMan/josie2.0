@@ -2,33 +2,11 @@
 
 <head>
     <title>Josie Ord - Designer|Maker</title>
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- include("partials/head-common.html") -->
 </head>
 
 <body>
-
-    <nav id="navbar" class="navbar">
-        <img src="./images/logo.png" />
-        <ul class="navbar-list">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#portfolio">Work</a>
-            </li>
-            <li>
-                <a href="#social">Social</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        </div>
-    </nav>
-
+    <!-- include("partials/navbar-common.html") -->
     <img class="main-image" src="./images/main-image.jpg" />
 
     <div class="container about-info" id="about">
@@ -56,8 +34,10 @@
             for coffee... I would love to talk!
         </div>
     </div>
-    
-    <div id="thumbnails" class="container thumbnails"></div>
+
+    <div id="thumbnails" class="container thumbnails">
+        <!-- include("partials/project-thumbnail-common.html") -->
+    </div>
 
     <div class="social" id="social">
         <h2 class="header">Social</h2>

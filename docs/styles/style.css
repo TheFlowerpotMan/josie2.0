@@ -1,0 +1,126 @@
+html body {
+    font-family: 'Asap';
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.navbar {
+    height: 75px;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background: transparent;
+    width: 100%;
+}
+    .navbar img {
+        margin-top: 13px;
+        margin-left: 14px;
+    }
+    .navbar ul {
+        list-style: none;
+        float: right;
+        height: 75px;
+        margin: 0px;
+        padding: 0px 40px 0px 0px;
+    }
+    .navbar li {
+        top: 0px;
+        display: inline-block;
+        height: 50px;
+        width: 75px;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .navbar li:hover {
+        background: rgba(211, 211, 211, 0.6);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: #4d4e4f;
+    }
+
+.main-image {
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+.container {
+    margin: 20px auto 20px auto;
+}
+
+.about-body {
+    line-height: 2;
+}
+
+.about-info {
+    text-align: center;
+    width: 50%;
+}
+
+.portrait {
+    border-radius: 60px;
+}
+
+.portfolio {
+    text-align: center;
+}
+.private-title {
+    margin-bottom: 50px;
+}
+
+.thumbnails {
+    width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.thumbnail-outer {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.thumbnail-image {
+    height: 100%;
+    width: 100%;
+}
+
+.fa {
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;   
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #115688;
+    color: white;
+}
+
+.social {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}
