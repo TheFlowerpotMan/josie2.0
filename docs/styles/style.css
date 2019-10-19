@@ -4,6 +4,11 @@ html body {
     margin: 0px;
     position: relative;
 }
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
 .navbar {
     height: 75px;
     margin: 0px;
@@ -80,13 +85,38 @@ html body {
 
 .thumbnail-outer {
     display: inline-block;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    position: relative;
 }
 
 .thumbnail-image {
     height: 100%;
     width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.thumbnail-outer:hover .thumbnail-image{
+    opacity: 0.3;
+}
+
+.thumbnail-outer:hover .thumbnail-inner {
+    opacity: 1;
+}
+
+.thumbnail-inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .fa {
